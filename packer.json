@@ -1,7 +1,8 @@
 {
   "variables": {
+    "ami_name": "",
     "local_ip": "",
-    "source_ami": "ami-51556e2b"
+    "source_ami": ""
   },
   "builders": [
     {
@@ -9,7 +10,7 @@
       "ami_groups": [
         "all"
       ],
-      "ami_name": "amzn-ami-minimal-hvm-managed-{{isotime \"20060102150405\"}}",
+      "ami_name": "{{user `ami_name`}}-{{isotime \"20060102150405\"}}",
       "ami_regions": [
         "us-east-1",
         "us-east-2",
