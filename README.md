@@ -1,0 +1,1 @@
+# amzn-ami-minimal-hvm-managed-packer
