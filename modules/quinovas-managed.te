@@ -1,0 +1,10 @@
+module quinovas-managed 1.0;
+
+require {
+	type initrc_var_run_t;
+	type ldconfig_t;
+	class file read;
+}
+
+#============= ldconfig_t ==============
+allow ldconfig_t initrc_var_run_t:file read;
